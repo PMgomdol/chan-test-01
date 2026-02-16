@@ -9,6 +9,9 @@
     --toggle-bg: #ffffff;
     --toggle-border: #dddddd;
     --toggle-text: #333333;
+    --input-bg: #ffffff;
+    --input-border: #d1d5db;
+    --input-text: #111827;
 }
 
 body[data-theme='dark'] {
@@ -22,6 +25,9 @@ body[data-theme='dark'] {
     --toggle-bg: #334155;
     --toggle-border: #475569;
     --toggle-text: #f8fafc;
+    --input-bg: #0f172a;
+    --input-border: #334155;
+    --input-text: #e2e8f0;
 }
 
 body {
@@ -70,6 +76,63 @@ h1 {
     gap: 15px;
     margin-bottom: 30px;
     min-height: 60px;
+}
+
+.contact-section {
+    margin-top: 28px;
+    text-align: left;
+}
+
+.contact-section h2 {
+    color: var(--text-primary);
+    font-size: 20px;
+    margin: 0 0 14px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--input-border);
+    background: var(--input-bg);
+    color: var(--input-text);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-submit-btn {
+    margin-top: 4px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px var(--button-shadow);
+}
+
+.contact-submit-btn:hover {
+    background-color: var(--button-bg-hover);
+    box-shadow: 0 6px 12px var(--button-shadow-hover);
 }
 
 .lotto-ball {
