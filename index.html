@@ -3,56 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또 번호 생성기</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZHVBKV356"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-8ZHVBKV356');
-    </script>
+    <title>OPENPATH Mirror</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <button id="theme-toggle-btn" type="button" aria-label="다크모드 전환">🌙 다크모드</button>
-        <h1>로또 번호 생성기</h1>
-        <div class="lotto-balls-container"></div>
-        <button id="generate-btn">번호 생성</button>
-
-        <section class="contact-section" aria-label="제휴 문의">
-            <h2>제휴 문의</h2>
-            <form class="contact-form" action="https://formspree.io/f/xbdaonpo" method="POST">
-                <label for="partner-name">이름</label>
-                <input id="partner-name" name="name" type="text" required>
-
-                <label for="partner-email">이메일</label>
-                <input id="partner-email" name="email" type="email" required>
-
-                <label for="partner-message">문의 내용</label>
-                <textarea id="partner-message" name="message" rows="4" required></textarea>
-
-                <input type="hidden" name="_subject" value="새 제휴 문의가 도착했습니다">
-                <button class="contact-submit-btn" type="submit">문의 보내기</button>
-            </form>
-        </section>
-
-        <section class="comments-section" aria-label="댓글">
-            <h2>댓글</h2>
-            <div id="disqus_thread"></div>
-            <script>
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://product-builder-tsusems8zz.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-        </section>
-    </div>
+    <iframe
+        class="site-mirror"
+        src="https://openpath.kr/"
+        title="OPENPATH"
+        loading="eager"
+        referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
     <script src="main.js"></script>
 </body>
 </html>
